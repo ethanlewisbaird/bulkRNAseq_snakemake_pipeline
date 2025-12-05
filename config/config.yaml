@@ -1,0 +1,25 @@
+samples:
+  - "3474"
+  - "3475"
+  - "3476"
+  - "3477"
+  - "3478"
+  - "3479"
+  - "3480"
+  - "3481"
+  - "3482"
+  - "3483"
+  - "3484"
+  - "3485"
+
+results_dir: "results"
+genome_fasta: "/opt/ref/Drosophila_melanogaster/EnsemblBDGP6.46/Drosophila_melanogaster.BDGP6.46.dna.toplevel.GFP.RFP.ed.fa"
+gtf_file: "/data/ebaird/scRNAseq/SCENTINELsep24/refs/genes.gtf"
+samples_dir: "/data/vtheodorou/fastq/EnsemblBDGP6.46_Diff.paper/RNAseq/"
+
+aligner: "star" # Options: "star" or "hisat2" (default: hisat2)
+# star_index: "/data/ebaird/STARIndex2" # Provide index or let the workflow build one (comment index line out)
+# hisat2_index: "/data/ebaird/hisat2_index/genome" # Provide index and base name e.g. /path/to/index/genome
+single_end: true # Options: true or false (default: false) - Set to true for single-end reads, false for paired-end reads
+
+diffexp_tool: "edgeR" # Options: "DESeq2" or "edgeR" (default: DESeq2)
